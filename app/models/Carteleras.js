@@ -1,7 +1,7 @@
 const {Model}=require('objection'); //Llamar a Model de la lib objetcion
 class Carteleras extends Model{//creo herencia de model
     static get tableName(){//especificas el nombre de la tabla
-        return 'cartelera';
+        return 'Cartelera';
     }
     static get jsonSchema() {
         return {

@@ -1,7 +1,7 @@
 const {Model}=require('objection'); //Llamar a Model de la lib objetcion
 class Directores extends Model{//creo herencia de model
     static get tableName(){//especificas el nombre de la tabla
-        return 'directores';
+        return 'Directores';
     }
     static get jsonSchema(){//especifica la estructura de la tabla
         return{

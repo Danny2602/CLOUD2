@@ -1,7 +1,7 @@
 const {Model}=require('objection'); //Llamar a Model de la lib objetcion
 class Paises extends Model{//creo herencia de model
     static get tableName(){//especificas el nombre de la tabla
-        return 'paises';
+        return 'Paises';
     }
     static get jsonSchema(){//especifica la estructura de la tabla
         return{
