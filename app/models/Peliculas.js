@@ -6,9 +6,9 @@ class Peliculas extends Model{//creo herencia de model
     static get jsonSchema(){//especifica la estructura de la tabla
         return{
             type: 'object',//object para un dato, array para una lista
-            required:['id_pelicula','titulo','duracion','año','actores'],// campos requeridos
+            required:['titulo','duracion','año','actores'],// campos requeridos
             properties:{ //estructura de los campos
-                id_pelicula:{type:'integer'},
+                
                 titulo:{type:'string',minLength:1},
                 duracion:{type:'integer'},
                 año:{type:'integer'},

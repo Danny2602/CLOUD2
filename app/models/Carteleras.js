@@ -9,7 +9,7 @@ class Carteleras extends Model{//creo herencia de model
             required: ['fecha_hora', 'precio', 'idioma', 'sala','clasificacion','fkid_pelicula'], // campos requeridos
             properties: { // estructura de los campos
                 
-                fecha_hora: { type: 'string', format: 'date-time' }, // ISO 8601 format
+                fecha_hora: { type: 'string', format: 'date' }, // ISO 8601 format
                 precio: { type: 'number' }, // Using 'number' for decimal values
                 idioma: { type: 'string', minLength: 1 },
                 sala: { type: 'string', minLength: 1 },

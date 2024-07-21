@@ -6,9 +6,9 @@ class Paises extends Model{//creo herencia de model
     static get jsonSchema(){//especifica la estructura de la tabla
         return{
             type: 'object',//object para un dato, array para una lista
-            required:['id_pais','nombre','codigo_iso','region'],// campos requeridos
+            required:['nombre','codigo_iso','region'],// campos requeridos
             properties:{ //estructura de los campos
-                id_pais:{type:'integer'},
+                
                 nombre:{type:'string',minLength:1},
                 codigo_iso:{type:'string',minLength:1},
                 region:{type:'string',minLength:1}

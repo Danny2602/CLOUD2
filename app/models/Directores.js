@@ -6,9 +6,9 @@ class Directores extends Model{//creo herencia de model
     static get jsonSchema(){//especifica la estructura de la tabla
         return{
             type: 'object',//object para un dato, array para una lista
-            required:['id_director','nombre','apellido','origen','edad'],// campos requeridos
+            required:['nombre','apellido','origen','edad'],// campos requeridos
             properties:{ //estructura de los campos
-                id_director:{type:'integer'},
+                
                 nombre:{type:'string',minLength:1},
                 apellido:{type:'string',minLength:1},
                 origen:{type:'string',minLength:1},
