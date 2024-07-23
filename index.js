@@ -7,7 +7,14 @@ const cors = require('cors'); // Importa el paquete cors
 const app = express();//creamos nueva instancia 
 const port = 3001;//puerto de salida
 
-app.use(cors()); // Usa el middleware cors
+
+const corsOptions = {
+	origin:'https://danny2602.github.io',
+	optionsSuccessStatus:200
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());//configura tipo json
 
 app.use('/api',routes);//configura la url base y rutas
